@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name></display-name>
+  
+  <!-- <filter>
+    <display-name>CharacterEncodingFilter</display-name>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>com.icss.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+         <param-name>encoding</param-name>
+         <param-value>utf-8</param-value>
+      </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping> -->
+  
+  <filter>
+  	<filter-name>UserAuthFilter</filter-name>
+    <filter-class>com.icss.filter.UserAuthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  		<filter-name>UserAuthFilter</filter-name>
+  		<url-pattern>/user/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MainSvl</servlet-name>
+    <servlet-class>com.icss.svl.MainSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MoreSvl</servlet-name>
+    <servlet-class>com.icss.svl.MoreSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MovDescSvl</servlet-name>
+    <servlet-class>com.icss.svl.MovDescSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginSvl</servlet-name>
+    <servlet-class>com.icss.svl.LoginSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutSvl</servlet-name>
+    <servlet-class>com.icss.svl.LogoutSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MovInfoSvl</servlet-name>
+    <servlet-class>com.icss.svl.MovInfoSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TimeTableSvl</servlet-name>
+    <servlet-class>com.icss.svl.TimeTableSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetCinamaSvl</servlet-name>
+    <servlet-class>com.icss.svl.GetCinamaSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HallSeatSvl</servlet-name>
+    <servlet-class>com.icss.svl.HallSeatSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MidlSvl</servlet-name>
+    <servlet-class>com.icss.svl.MidlSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckoutSvl</servlet-name>
+    <servlet-class>com.icss.svl.CheckoutSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MainRenewSvl</servlet-name>
+    <servlet-class>com.icss.svl.back.MainRenewSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ValidLoginSvl</servlet-name>
+    <servlet-class>com.icss.svl.ValidLoginSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterSvl</servlet-name>
+    <servlet-class>com.icss.svl.RegisterSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ValidUnameSvl</servlet-name>
+    <servlet-class>com.icss.svl.ValidUnameSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ValidEmailSvl</servlet-name>
+    <servlet-class>com.icss.svl.ValidEmailSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ValidTelSvl</servlet-name>
+    <servlet-class>com.icss.svl.ValidTelSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserOrderSvl</servlet-name>
+    <servlet-class>com.icss.svl.UserOrderSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetOneMovSvl</servlet-name>
+    <servlet-class>com.icss.svl.GetOneMovSvl</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>MainSvl</servlet-name>
+    <url-pattern>/MainSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MoreSvl</servlet-name>
+    <url-pattern>/MoreSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MovDescSvl</servlet-name>
+    <url-pattern>/MovDescSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginSvl</servlet-name>
+    <url-pattern>/LoginSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutSvl</servlet-name>
+    <url-pattern>/LogoutSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MovInfoSvl</servlet-name>
+    <url-pattern>/back/MovInfoSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TimeTableSvl</servlet-name>
+    <url-pattern>/user/TimeTableSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCinamaSvl</servlet-name>
+    <url-pattern>/ajax/GetCinamaSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HallSeatSvl</servlet-name>
+    <url-pattern>/ajax/HallSeatSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MidlSvl</servlet-name>
+    <url-pattern>/user/MidlSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckoutSvl</servlet-name>
+    <url-pattern>/user/CheckoutSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MainRenewSvl</servlet-name>
+    <url-pattern>/back/MainRenewSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ValidLoginSvl</servlet-name>
+    <url-pattern>/ValidLoginSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterSvl</servlet-name>
+    <url-pattern>/RegisterSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ValidUnameSvl</servlet-name>
+    <url-pattern>/ValidUnameSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ValidEmailSvl</servlet-name>
+    <url-pattern>/ValidEmailSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ValidTelSvl</servlet-name>
+    <url-pattern>/ValidTelSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserOrderSvl</servlet-name>
+    <url-pattern>/user/UserOrderSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetOneMovSvl</servlet-name>
+    <url-pattern>/GetOneMovSvl</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>/movTic/movPag/movie2.html</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+</web-app>
